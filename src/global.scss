@@ -24,3 +24,10 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.botao{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction:column;
+}
