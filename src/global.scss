@@ -25,29 +25,42 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
+.fundo{
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(48,0, 98, 1) 0%, rgba(74,11,129,1) 49%, rgba(172,81,245,1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .container{
   margin-top: 10%;
   margin-bottom: 2rem;
-  border: 1px black solid;
+  border: 1px white solid;
   border-radius: 10px;
+  width: 80%;
 }
 
 h1{
   text-align: center;
   font-weight: 600;
   font-size: 2rem;
+  color: white;
 }
 
 .input{
   display: flex;
   margin-left: 1rem;
   margin-bottom: 1rem;
-  border: 1px black solid;
+  border: 1px white solid;
   border-radius: 10px;
   width: 92%;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   gap: 1rem;
+  color: white;
   ion-icon{
     margin-top: 0.5rem;
     margin-left: 0.5rem;

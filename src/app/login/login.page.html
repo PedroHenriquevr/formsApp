@@ -1,31 +1,25 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+  <div class="fundo">
+    <div class="container">
+      <h1>Login</h1>
+      <div class="input">
+        <ion-icon name="person-outline"></ion-icon>
+        <ion-input placeholder="Insira seu email"></ion-input>
+      </div>
 
-
-  <div class="container">
-    <h1>Login</h1>
-    <div class="input">
-      <ion-icon name="person-outline"></ion-icon>
-      <ion-input placeholder="Insira seu email"></ion-input>
+      <div class="input">
+        <ion-icon name="lock-closed-outline"></ion-icon>
+        <ion-input placeholder="Insira sua senha"></ion-input>
+      </div>
     </div>
 
-    <div class="input">
-      <ion-icon name="lock-closed-outline"></ion-icon>
-      <ion-input placeholder="Insira sua senha"></ion-input>
-    </div>
-  </div>
-
-  <div class="botoes">
-    <div class="botao">
-      <ion-button fill="outline">Entrar</ion-button>
-      <ion-button routerLink="/registro" fill="outline">Registrar</ion-button>
-      <ion-button fill="outline">Esqueceu a senha</ion-button>
-      <ion-button routerLink="/tabs/tab1" fill="outline">Voltar</ion-button>
+    <div class="botoes">
+      <div class="botao">
+        <ion-button fill="outline">Entrar</ion-button>
+        <ion-button routerLink="/registro" fill="outline">Registrar</ion-button>
+        <ion-button fill="outline">Esqueceu a senha</ion-button>
+        <ion-button routerLink="/tabs/tab1" fill="outline">Voltar</ion-button>
+      </div>
     </div>
   </div>
 </ion-content>
