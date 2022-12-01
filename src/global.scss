@@ -25,6 +25,20 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
+
+.fundo {
+  margin-top: -40px;
+  height: 120%;
+  width: 100%;
+  background: rgb(48, 0, 98);
+  background: linear-gradient(
+    180deg,
+    rgba(48, 0, 98, 1) 0%,
+    rgba(74, 11, 129, 1) 49%,
+    rgba(172, 81, 245, 1) 100%
+  );
+}
+
 .container{
   margin-top: 10%;
   margin-bottom: 2rem;
@@ -34,6 +48,7 @@ h1{
   text-align: center;
   font-weight: 600;
   font-size: 2rem;
+  padding-top: 2rem;
 }
 
 .input{
@@ -58,7 +73,6 @@ h1{
   flex-flow: wrap;
   justify-content: space-around;
   align-items: auto;
-  height: 20%;
 
   ion-button{
     width: 11rem;

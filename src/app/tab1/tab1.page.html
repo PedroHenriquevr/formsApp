@@ -1,12 +1,26 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title> Login/Registro </ion-title>
+    <ion-buttons slot="secondary">
+    </ion-buttons>
+    <ion-buttons slot="primary">
+      <ion-button routerLink="/home">
+        <ion-icon slot="icon-only" name="log-in-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Home</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <div class="fundo">
+
   <div class="botao">
+    <h1>
+      Aplicativo do Pepe
+    </h1>
+    <p>Faça o login ou o registro e não tenha nada em troca:)</p>
     <ion-button routerLink="/login" fill="outline">login</ion-button>
     <ion-button routerLink="/registro" fill="outline">registro</ion-button>
   </div>
+</div>
 </ion-content>
