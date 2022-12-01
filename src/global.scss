@@ -42,6 +42,9 @@
 .container{
   margin-top: 10%;
   margin-bottom: 2rem;
+  border: 1px white solid;
+  border-radius: 10px;
+  width: 80%;
 }
 
 h1{
@@ -61,6 +64,7 @@ h1{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   gap: 1rem;
+  color: white;
   ion-icon{
     margin-top: 0.5rem;
     margin-left: 0.5rem;
