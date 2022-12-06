@@ -27,21 +27,15 @@
 
 
 .fundo {
-  margin-top: -40px;
-  height: 120%;
-  width: 100%;
-  background: rgb(48, 0, 98);
-  background: linear-gradient(
-    180deg,
-    rgba(48, 0, 98, 1) 0%,
-    rgba(74, 11, 129, 1) 49%,
-    rgba(172, 81, 245, 1) 100%
-  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .container{
-  margin-top: 10%;
-  margin-bottom: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
   border: 1px white solid;
   border-radius: 10px;
   width: 80%;
@@ -68,6 +62,11 @@ h1{
   ion-icon{
     margin-top: 0.5rem;
     margin-left: 0.5rem;
+  }
+  span{
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    font-size: 10px;
   }
 }
 
