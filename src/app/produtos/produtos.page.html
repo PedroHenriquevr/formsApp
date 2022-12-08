@@ -1,0 +1,50 @@
+<ion-content>
+  <div class="fundo">
+    <div class="container">
+      <h1>Cadastro Produtos</h1>
+      <form [formGroup]="formProduto">
+        <div class="input">
+          <ion-input formControlName="nome" placeholder="Nome"></ion-input>
+          <ng-container *ngFor="let erro of mensagens.nome">
+            <span
+              class="msg-erro"
+              *ngIf="formProduto.get('nome').hasError(erro.tipo)
+           && (formProduto.get('nome').dirty || formProduto.get('nome').touched)"
+            >
+              {{erro.mensagem}}
+            </span>
+          </ng-container>
+        </div>
+        <div class="input">
+          <ion-input
+            formControlName="validade"
+            placeholder="Validade"
+          ></ion-input>
+          <ng-container *ngFor="let erro of mensagens.validade">
+            <span
+              class="msg-erro"
+              *ngIf="formProduto.get('validade').hasError(erro.tipo)
+           && (formProduto.get('validade').dirty || formProduto.get('validade').touched)"
+            >
+              {{erro.mensagem}}
+            </span>
+          </ng-container>
+        </div>
+          <div class="input">
+            <ion-input formControlName="preco" placeholder="Preço"></ion-input>
+            <ng-container *ngFor="let erro of mensagens.preco">
+              <span class="msg-erro"
+              *ngIf="formProduto.get('preco').hasError(erro.tipo)
+               && (formProduto.get('preco').dirty || formProduto.get('preco').touched)">
+                {{erro.mensagem}}
+              </span>
+            </ng-container>
+          </div>
+      </form>
+    </div>
+    <div class="botao">
+      <ion-button (click)="salvarCadastro()" fill="outline">Salvar</ion-button>
+      <ion-button routerLink="/tabs/tab1" fill="outline" >Voltar</ion-button>
+    </div>
+  </div>
+</ion-content>
